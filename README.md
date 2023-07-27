@@ -1,5 +1,14 @@
 # Stdlog
 
+
+> Note: I've written this some time ago, and it's time this package gets archived. Even though I still haven't encountered any issues with it, I moved away from not really caring about it to having a preference for loggers passed via dependency injection. This logger, even though it's mostly just a formatter of the standard logger, still acts similar to a global variable, making it very hard to disable in cases such as testing a function that logs something, where you would not necessarily want to see the same logs. I've also linked below some articles discussing this topic. Btw, log/slog will be out in go 1.21, so can't wait to test that out!
+
+Reference to mentioned articles:
+
+- [Dave Cheney, a GoD](https://dave.cheney.net/2017/01/23/the-package-level-logger-anti-pattern)
+- [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/#logging)
+- [People like to argue about programming :)](https://www.reddit.com/r/golang/comments/p7kzti/understanding_global_scope_and_how_it_impacts/)
+
 Introduction
 ------------
 
